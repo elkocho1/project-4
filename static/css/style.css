@@ -1,3 +1,5 @@
-.home-buton{
-    color:red;
+.login-buttons{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
