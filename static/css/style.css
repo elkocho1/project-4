@@ -2,3 +2,15 @@
     color: black;
     text-decoration: underline;
 }
+
+
+.btn-primary{
+    background-color: #34d399;
+    border-color: #34d399;
+}
+
+
+.btn-secondary {
+    background-color: #6b7280;
+    border-color: #6b7280;
+}
