@@ -7,10 +7,16 @@
 .btn-primary{
     background-color: #34d399;
     border-color: #34d399;
+    margin-right: 10px;
 }
 
 
 .btn-secondary {
     background-color: #6b7280;
     border-color: #6b7280;
+}
+
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: space-between;
 }
