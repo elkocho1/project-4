@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %} Homepage {% endblock %}
 {% block content %}
 <h1>Home Page</h1>
+
+<div>
+    <h2>New Items</h2>
+    {% if "placeholder" in Item.featured_image.url %}
+    <img src="{% static 'images/default-1.jpg' %}" alt="placeholder image">
+    {% else %}
+    <img src="{{Item.featured_image.url}}" alt="{{post.title}}">
+    {% endif %}
+</div>
+
 {% endblock %}

@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -18,7 +19,7 @@ class Item(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True, null=True)
     price = models.FloatField()
-    image =models.ImageField(upload_to='item_images', blank=True, null=True)
+    featured_image = CloudinaryField('image', default='placefolder')
     is_sold = models.BooleanField(default=False)
     created_by = models.ForeignKey(User, related_name='items', on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
